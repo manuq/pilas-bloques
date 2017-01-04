@@ -1,6 +1,8 @@
 ---
 language: objective-c
 sudo: false
+addons:
+    firefox: latest
 cache:
   directories:
   - node_modules
@@ -25,6 +27,8 @@ before_install:
 - npm install -g grunt-cli
 - npm install -g node-gyp
 - npm install -g ember-cli
+before_script:
+  - export DISPLAY=:99; sh -e /etc/init.d/xvfb start; sleep 3
 before_deploy:
 - brew install curl
 - cd $TRAVIS_BUILD_DIR && travis/download-homebrew
