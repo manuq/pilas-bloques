@@ -178,6 +178,6 @@ _compilar_electron_win32:
 
 
 test_travis:
-	time ember exam
+	time ember exam --split=5 --parallel
 
 .PHONY: dist bajar_dependencias
