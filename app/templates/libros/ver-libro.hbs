@@ -10,7 +10,7 @@
 
     <h2>{{grupo.titulo}}</h2>
 
-    {{#each grupo.desafios as |desafio|}}
+    {{#each grupo.desafiosOrdenados as |desafio|}}
       {{pilas-desafio model=desafio}}
     {{/each}}
 

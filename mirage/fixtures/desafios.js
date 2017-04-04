@@ -949,6 +949,7 @@ export default [
   },
   {
     id: 152,
+    orden: 'Ultimo',
     grupoId: 6,
     nombre: 'CotyDibujoLibre',
     titulo: '¡Coty dibuja libre!',

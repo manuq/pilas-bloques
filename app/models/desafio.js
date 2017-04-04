@@ -13,5 +13,6 @@ export default Model.extend({
   grupo: belongsTo('grupo'),
   bloques: attr(),
 	solucionInicial: attr('string'),
-	debugging: attr('boolean')
+	debugging: attr('boolean'),
+  orden: attr('string')
 });
